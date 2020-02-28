@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[burgundy	]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.95]{geometry}
+\usepackage[francais]{babel}
+\usepackage[]{eurosym}
+\usepackage{outlines}
+%\usepackage[scale=0.8,top=2cm]{geometry}
+
+\renewcommand*{\namefont}{\fontsize{20}{23}\bfseries}
+\renewcommand*{\titlefont}{\fontsize{15}{15}\mdseries\upshape\itshape}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
+\firstname{\color{burgundy} Léonard}
+\familyname{BINET \color{burgundy}}
+\title{\color{brickred} Data Science Developer}              
+\address{13 avenue Gambetta}{75020, France}    
+\mobile{(+33) 6 76 81 25 28}                    
+\email{leonard.binet@telecom-paristech.fr}
+\social[linkedin]{leonardbinet}
+\social[github]{leonardbinet}
+\homepage{leonardbinet.me}
+\photo[90pt][0.4pt]{Photo_Linkedin.png}                      
+
+\begin{document}
+\maketitle
+\vspace*{-5mm}
+\parskip=2.9pt
+
+
+\section{Expérience professionnelle}
+\cventry{\bfseries  Jan-2018 Juillet-2017}{Data Scientist Intern}{Alkemics}{Paris}{}{Prédiction d'attributs de produits en vue d'améliorer la qualité des données relatives à des produits de grande consommation. 
+\begin{itemize}
+\item Domaines de recherche: classification multi-classe multi-label, NLP-word embedding, calibration
+\item Implémentation en production: Hadoop/Hive, orchestration Luigi, prédictions via fork de Fasttext, indexations dans ElasticSearch, interface front ReactJS, dashboard monitoring D3JS.
+\end{itemize}
+}
+
+\cventry{\bfseries Juin-2017 Nov--2016}{Mission R\&D dans le cadre du Master Spécialisé}{SNCF Innovation \& Recherche}{Paris}{}{
+Amélioration des prédictions de retards sur le réseau transilien, à partir des données Open-Data:
+\begin{itemize}
+\item \href{https://github.com/leonardbinet/Transilien-Api-ETL}{extraction des données de l'API transilien} et correspondance avec d'autres sources de données à haute fréquence (8k requêtes/min DynamoDB)
+\item réalisation de prédictions en temps réel,  \href{http://departure-time-prediction-project.com/}{et service via API} (django-rest-framework)
+\end{itemize}
+Implémentation de  \href{http://leonardbinet.me/2017/02/26/devopsprogrammingsecurity-best-practices/}{bonnes pratiques devops} pour le déploiement et la maintenance du projet: \href{https://github.com/leonardbinet/Salt-Vagrant-master-mode}{Vagrant/Salt} pour le déploiement et la configuration des serveurs sur AWS, Jenkins pour la planification et la supervision, Sphinx pour la \href{https://leonardbinet.github.io/}{documentation}.
+}
+
+\cventry{\bfseries Avril--2016 Août--2013}
+{Ingénieur Commercial}{OTIS UTC}{Paris}{}
+{Gestion et déveoppement d'un portefeuille de clients tertiaires et de gestion de patrimoine. Objectifs:
+\begin{outline}
+\1 développement de la valeur du portefeuille des contrats de maintenance ($\sim$ 2M\euro /an)
+\1 vente de services et de travaux (obj: $\sim$ 1M\euro /an)
+\end{outline}
+Conseil client (conformité, fiabilité, valorisation de patrimoine), négociation. \\
+Développement d'outils de détection et de suivi des contrats à risque et participation à des groupes de travail avec direction marketing pour l'élaboration d'outils commerciaux.
+}
+
+\cventry{\bfseries Juin--2013 Mars--2012}{Associé Business Development}{Whibo}{Paris}{}{
+Whibo était une solution permettant de faciliter et améliorer la tenue de sessions de travail collaboratives en fournissant une solution digitale alternative au traditionnel paperboard. 
+Au sein d’une start-up de 3 personnes, chargé du développement commercial B2B.
+}
+
+
+\section{Projets personnels}
+\cventry{\bfseries }{Package Pypi: client Navitia en python}{}{\href{https://github.com/leonardbinet/navitia_client} {navitia\_client}}{}{
+Package open-source pour faciliter l'exploitation de l'API Navitia (données des réseaux de transport).}
+
+\cventry{\bfseries }{Machine Learning: Synthèse des enseignements de classification supervisée}{}{}{}{Synthèse en format \LaTeX de différents cours de machine learning pour les problèmes de classification supervisée.}
+
+\cventry{\bfseries }{Site sur l'ascenseur en copropriété}{}{}{\href{https://github.com/leonardbinet/Elevator-website}{code disponible ici}, Bootstrap/Django}{}
+
+\section{Formation}
+\cventry{\bfseries 2016--2017}{Mastère Spécialisé Big Data}{Télécom ParisTech}{Institut Mines-Télécom}{}{Data-science: statistiques, machine learning, économétrie. Engineering: environnements distribués, bases de données NoSQL.}
+\cventry{\bfseries 2008--2012}{Programme Grande Ecole}{Audencia}{Spécialité CRM}{St Petersburg State University, 2012}{}
+\cventry{\bfseries 2006--2008}{Classe préparatoire ECS}{Etablissement Saint Jean de Douai }{}{}{}
+
+\section{Compétences techniques}
+\cvcomputer{\bfseries Langages}{Python, Javascript, Java, Scala}{\bfseries Web}{Django, ReactJS, D3, Bootstrap.}
+\cvcomputer{\bfseries DevOps}{Git, Salt, Vagrant, Jenkins}{\bfseries Databases}{MySQL, DynamoDB, MongoDB, ElasticSearch.}
+\cvcomputer{\bfseries Données}{Pandas, Sklearn, Fasttext}{\bfseries Visualisation}{Leaflet, Matplotlib, Seaborn}
+\cvcomputer{\bfseries Langues}{Anglais: C2: IELTS 7.5, Allemand: B2}{\bfseries Gmat }{760}
+
+\section{Centres d'intérêt}
+\cvline{\bfseries Escalade}{Niveau 6+, excursions bloc et falaise.}
+\cvline{\bfseries Voile}{Stages Glénans, Skippeur Audencia Voile d’équipages sur J80, skippeur sur Dufour 48}
+\end{document}
